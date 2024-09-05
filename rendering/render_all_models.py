@@ -23,7 +23,7 @@ for path in data:
     # path = data[-5]
     path = sorted(glob.glob(path + "/*.glb"))[0]
 
-    render_cmd = '%s -b -P /kaggle/working/mvs_objaverse/rendering/render_blender.py -- --obj %s --output %s --views 4 --resolution 224 > tmp.out' % (
+    render_cmd = '%s -b -P /kaggle/working/mvs_objaverse/rendering/render_blender.py -- --obj %s --output %s --views 12 --resolution 224 > tmp.out' % (
         opt.blender_root, path, opt.save_folder
     )
     print(render_cmd)
