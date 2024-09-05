@@ -456,8 +456,7 @@ def sphere_renders(
 
     positions_to_render = []
     for i_plane in range(nb_planes):
-        elevation = np.deg2rad(  elevation_range[0] + \
-                                ((i_plane+1) * (elevation_range[1]-elevation_range[0])/(nb_planes+1)))
+        elevation = np.deg2rad(  elevation_range[0])
         for i_circle in range(nb_circle):
             azimuth = np.deg2rad(tetha_range[0]+((i_circle+1) * (tetha_range[1]-tetha_range[0])/(nb_circle+1)))
             eye_position = [
